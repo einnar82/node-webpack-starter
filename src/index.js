@@ -7,7 +7,7 @@ import productRoute from './routes/product.route'
 dotenv.config();
 
 const app = express()
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 4002;
 
 app.use(express.json());
 app.use(helmet());
