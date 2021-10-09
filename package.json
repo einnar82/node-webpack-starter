@@ -6,19 +6,17 @@
   "scripts": {
     "dev": "nodemon --exec babel-node -- ./src/index.js",
     "build": "rimraf -R ./dist && webpack --mode production",
-    "test": "truffle test",
+    "test": "mocha",
     "start": "babel-node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.2.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "helmet": "^4.6.0",
-    "web3": "^1.5.2"
+    "helmet": "^4.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
